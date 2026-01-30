@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  margin: 0;
+}
+
+header {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+.tickets {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.ticket-card {
+  background: white;
+  padding: 25px;
+  width: 300px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.note {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.telegram-btn {
+  background: #0088cc;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.telegram-btn:hover {
+  background: #006fa6;
+}
