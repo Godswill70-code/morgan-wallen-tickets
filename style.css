@@ -20,10 +20,19 @@ body {
 
 /* HERO */
 .hero {
-  background: linear-gradient(135deg, #000, #222);
+  min-height: 90vh;
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.85)
+    ),
+    url("https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 60px 20px;
   color: white;
-  padding: 80px 20px;
-  text-align: center;
 }
 
 .hero h1 {
@@ -253,4 +262,20 @@ footer {
 
 .section p {
   color: #555;
+}
+
+/* ANIMATIONS */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-content {
+  animation: fadeUp 1s ease-out;
 }
