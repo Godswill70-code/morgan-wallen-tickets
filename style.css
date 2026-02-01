@@ -171,6 +171,19 @@ body {
   border-radius: 20px;
   font-size: 0.75rem;
   margin-bottom: 8px;
+  animation: pulse 1.6s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 75, 43, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 12px rgba(255, 75, 43, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 75, 43, 0);
+  }
 }
 
 .tour-card h3 {
