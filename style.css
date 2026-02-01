@@ -211,7 +211,7 @@ body {
 .cta-section {
   background: #111;
   color: white;
-  padding: 60px 20px;
+  padding: 80px 20px 100px; /* extra bottom space */
   text-align: center;
 }
 
@@ -222,7 +222,7 @@ footer {
   background: #000;
   color: #aaa;
   text-align: center;
-  padding: 15px;
+  padding: 30px 15px;
   font-size: 0.8rem;
 }
 
@@ -231,7 +231,7 @@ footer {
 ===================== */
 .telegram-float {
   position: fixed;
-  bottom: 20px;
+  bottom: 30px;
   right: 20px;
   width: 60px;
   height: 60px;
@@ -284,5 +284,11 @@ footer {
   .hero-grid {
     grid-template-columns: 1.1fr 0.9fr;
     align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .cta-section {
+    padding-bottom: 120px;
   }
 }
