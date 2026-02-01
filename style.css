@@ -298,3 +298,36 @@ footer {
     align-items: center;
   }
     }
+
+/* =====================
+   SOLD OUT BADGE – FORCE ANIMATION
+===================== */
+.tour-card .sold-badge {
+  display: inline-block;
+  background: linear-gradient(90deg, #ff416c, #ff4b2b);
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  margin-bottom: 10px;
+
+  animation: soldPulse 1.4s infinite !important;
+  position: relative;
+  z-index: 2;
+}
+
+/* UNIQUE KEYFRAMES (NO CONFLICTS) */
+@keyframes soldPulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 75, 43, 0.7);
+  }
+  70% {
+    transform: scale(1.08);
+    box-shadow: 0 0 0 14px rgba(255, 75, 43, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 75, 43, 0);
+  }
+}
